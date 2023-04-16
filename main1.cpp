@@ -13,3 +13,7 @@ int main(){
     output();
     return 0;
 }
+
+// Output:
+
+// Infinite times Recurrsion will be return

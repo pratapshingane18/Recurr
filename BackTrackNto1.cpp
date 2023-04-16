@@ -2,19 +2,18 @@
 
 #include<iostream>
 using namespace std;
-int cnt =1;
+int cnt =0;
 
-int output(int n){
-    if(cnt > n){
+int output(int cnt, int n){
+    if(cnt >= n){
         return 0;
     }
-    n--;
     
-    
-    output(n);
+    cnt++;
+    output(cnt,n);
 
     cout<<cnt<<endl;
-    cnt++;
+    
     
 
 return 0;
@@ -22,6 +21,6 @@ return 0;
 }
 
 int main(){
-    output(101);
+    output(0,100);
     return 0;
 }

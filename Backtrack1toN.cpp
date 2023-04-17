@@ -10,11 +10,9 @@ int output(int n){
     }
     n--;
     
-    
     output(n);
 
-    cout<<cnt<<endl;
-    cnt++;
+    cout<<n<<endl;
     
 
 return 0;
